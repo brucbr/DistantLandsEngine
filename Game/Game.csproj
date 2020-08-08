@@ -45,13 +45,13 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
+      <Content Include="assets\player.png" />
+    </ItemGroup>
+    <ItemGroup>
       <ProjectReference Include="..\Engine\DistantLands.csproj">
         <Project>{52ce9d33-5349-417a-a099-1ac0aaba7e9b}</Project>
         <Name>DistantLands</Name>
       </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="assets\player.png" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

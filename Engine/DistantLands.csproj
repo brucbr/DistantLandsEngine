@@ -26,6 +26,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>..\Built\DistantLands.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,9 +42,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graphics\Graphics.cs" />
+    <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\Window.cs" />
     <Compile Include="Input\Input.cs" />
-    <Compile Include="Objects\GameObjects.cs" />
+    <Compile Include="Objects\Enemy.cs" />
+    <Compile Include="Objects\GameObject.cs" />
+    <Compile Include="Objects\Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\libjpeg-9.dll" />

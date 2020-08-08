@@ -1,6 +1,4 @@
 ﻿using SDL2;
-using DistantLands.Objects;
-using DistantLands.Graphics;
 
 namespace Game
 {
@@ -8,8 +6,8 @@ namespace Game
     {
         public static void Main()
         {
-            var win = new Window(600, 600, SDL.SDL_WINDOWPOS_CENTERED, SDL.SDL_WINDOWPOS_CENTERED, false, "Testing");
-            var player = new Player("assets/player.png", win.Renderer, 0, 0, 32, 32);
+            DistantLands.Graphics.Window win = new DistantLands.Graphics.Window(600, 600, SDL.SDL_WINDOWPOS_CENTERED, SDL.SDL_WINDOWPOS_CENTERED, false, "Testing");
+            DistantLands.Objects.Player player = new DistantLands.Objects.Player("assets/player.png", win.Renderer, 0, 0, 32, 32);
             while (win.Running)
             {
                 win.FrameCheck();
