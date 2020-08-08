@@ -1,12 +1,13 @@
 ﻿using SDL2;
-using DistantLands.Graphics;
 using DistantLands.Objects;
+using DistantLands.Graphics;
 
 namespace Game
 {
     class Program
     {
-        static void Main() {
+        public static void Main()
+        {
             var win = new Window(600, 600, SDL.SDL_WINDOWPOS_CENTERED, SDL.SDL_WINDOWPOS_CENTERED, false, "Testing");
             var player = new Player("assets/player.png", win.Renderer, 0, 0, 32, 32);
             while (win.Running)
